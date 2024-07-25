@@ -1,0 +1,46 @@
+@mixin text-body{
+    font-family: $primary-font;
+    color: $color-text;
+}
+
+@mixin desafio-box{
+    display: flex;
+    align-items: center;
+}
+@mixin date-textBox{
+    font-family: $primary-font;
+    color: $color-text;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+@mixin title-textBox{
+    font-family: $primary-font;
+    color: $color-text;
+    font-weight: 700;
+    font-size: 20px; 
+}
+
+@mixin logo-desafio{
+    width: 40px;
+    height: 40px;
+    border-radius: 77px;
+    margin-right: 10px;   
+}
+
+@mixin text-Desafio{
+    font-family: $primary-font;
+    color: $color-text;
+    font-weight: 500;
+    font-size: 16px;
+}
+@mixin button-registro{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;  
+}
+
+
+
+
+

@@ -1,0 +1,134 @@
+.container{
+    display: flex;
+    &__populate{
+        margin-left: 105px;
+        
+        .container_title{
+            @include text-body;
+            font-weight: $primary-weight;
+            font-size: $primary-size;
+        }
+        .container__box{
+            display: flex;
+            padding-right: 100px;
+
+            .container__card{
+                padding-right: 20px;
+                .container__imagen{
+                    width: 298px;
+                    height: 200px;
+                    border-radius: 20px;
+                }
+                .textBox{
+                    .textBox__date{
+                        @include date-textBox;
+                    }
+                    .textBox__title{
+                        @include title-textBox;
+                    }
+                    .boxDesafio{
+                        @include desafio-box;
+
+                        .boxDesafio__logo{
+                            @include logo-desafio;
+                       }
+                       .boxDesafio__textLogo{
+                           @include text-Desafio;
+                       }
+                   
+                    }
+                }
+            }    
+        }
+    }
+}
+
+.categories{
+
+    &__title{
+        @include text-body;
+        font-size: $primary-size;
+    }
+    .categories__box{
+        display: flex;
+        width: 298px;
+        height: 89px;    
+        margin-bottom: 20px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 10px;
+            
+        .categories__imagen{
+            width: 70px;
+            height: 60px;
+            padding-left: 10px;
+        }
+        .categories__text{
+            font-weight: 700;
+            font-size: 36px;
+            color: #ffffff;
+            justify-content: end;
+            padding-right: 10px;
+        }
+    }
+    .categories__box--html{
+        background-color: $box-html;
+        
+    }
+    .categories__box--javascript{
+        background-color:$box-javascript;   
+    }
+    .categories__box--css{
+        background-color: $box-css;
+    }
+    .categories__box--vue{
+        background-color:$box-vue;
+    }
+    .categories__box--react{
+        background-color:$box-react;
+    }
+    .categories__box--bootstrap{
+        background-color: $box-bootstrap;
+    }
+    .boxCategories{
+        margin-top: 35px;
+        .boxCategories__link{
+            @include text-body;
+            font-weight: 400;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
+.registro{
+    display: flex;
+    justify-content: center;
+    &__link{
+    @include title-textBox;  
+    }
+}
+
+.suscription{
+    background-color: $button-suscription;
+    margin: 20px 180px;
+    height: 200px;
+    &__box{
+        display: flex;
+        justify-content: space-around;
+        .suscription__email{
+            margin-right: 80px;
+            margin-left: 150px;
+            .suscription__title{
+                font-family: $primary-font;
+                color: #ffffff;
+            }
+            .suscription__input{
+                width: 380px;
+                height: 40px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+.registroSection{
+     
+    &__text{
+        @include text-body;
+        font-weight: $secundary-weight;
+        text-align: center;
+    }
+    .registroForm{
+        text-align: center;
+        &__item{
+            @include text-body;
+            font-weight: $secundary-weight;
+            @include button-registro;   
+        }
+    }
+    .registroText{
+        @include text-body;
+        text-align: center;
+        font-weight: $secundary-weight;
+        font-size: $third-size;
+        .registroText__link{
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.containerFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    .containerFooter__row{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 40px;
+
+        .containerFooter__logo{
+            width: 55px;
+            height: 55px;
+            margin-top: 38px;
+            margin-left: 109px;
+            border-radius: 10px;
+        }
+        .containerFooter__Blog{
+            @include text-body;
+            font-weight: $primary-weight;
+            font-size: $primary-size;
+            font-style: normal;
+            margin-left: 21px;; 
+            margin-top: 65px;  
+             
+        }
+    }
+    .containerFooter__text{
+        @include text-body;
+        font-weight: $secundary-weight;
+        font-size: $secundary-size;
+        font-style: normal;
+        margin-right: 160px;
+    }
+
+}
+

@@ -1,0 +1,39 @@
+.registroButtom{
+    text-align: center;
+
+    .registroButtom__buttonCreate{
+        @include text-body;
+        font-weight: $primary-weight;
+        font-size: $third-size;
+        @include button-registro;
+        background-color: $button-suscription;
+        color: #ffffff;
+    }
+    .registroButtom__buttonRegister{
+        @include text-body;
+        @include button-registro;
+        font-weight: $primary-weight;
+        font-size: $third-size;
+    }
+}
+
+.suscriptionBox{
+    display: inline-block;
+    align-content: end;
+    margin-left: 80px;
+    margin-right: 150px;
+    
+    .suscriptionBox__button{
+        @include text-body;
+        background-color: rgb(185, 184, 184);
+        font-weight: $primary-weight;
+        font-size: $third-size;
+        height: 40px;
+        width: 150px;
+        border-radius: 10px;
+        
+        
+
+
+    }
+}

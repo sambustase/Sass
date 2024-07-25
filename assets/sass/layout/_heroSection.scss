@@ -1,0 +1,83 @@
+.heroSection{
+
+    &__title{
+        @include text-body;
+        font-weight: $primary-weight;
+        font-size: $primary-size;
+        margin-left: 110px;
+    }
+    &__elements{
+        display: flex;
+
+        .heroSection__boostrap{
+            margin-left: 105px;
+            .boxBootstrap__imagen{
+                width: 603px;
+                height: 314px;
+                border-radius: 20px;
+            }
+            .boxBootstrap__date{
+                @include text-body;
+                font-weight: 400;
+                font-size: 18px;
+            }
+            .boxBootstrap__text{
+                @include text-body;
+                font-weight: $primary-weight;
+                font-size: $primary-size
+            }
+            .boxDesafio{
+                @include desafio-box;
+
+                .boxDesafio__imagen{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 77px;
+                }
+                .heroSection__container{
+                    margin-left: 30px;
+                }
+                .boxDesafio__text{
+                    @include text-body;
+                    font-weight: 500;
+                    font-size: 24px;
+                    margin-left: 22px;
+                }
+            }
+        }
+    }
+
+}
+
+.heroSection__container{
+    margin-left: 30px;
+    .heroSection__box{
+        display: flex;
+        align-items: last baseline;
+        margin-bottom: 30px;
+        .heroSection__imagen{
+            width: 189px;
+            height: 145px;
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+        .heroSection__textBox{
+            .textBox__date{
+                @include date-textBox;
+            }
+            .textBox__title{
+                @include title-textBox;
+            }
+            .boxDesafio{
+                @include desafio-box;
+            
+                .boxDesafio__logo{
+                     @include logo-desafio;
+                }
+                .boxDesafio__textLogo{
+                    @include text-Desafio;
+                }
+            }
+        }
+    }
+}

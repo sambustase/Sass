@@ -1,0 +1,51 @@
+.blog{
+    margin-left: 105px;
+    margin-right: 105px;
+    .container_title{
+        @include text-body;
+        font-weight: $primary-weight;
+        font-size: $primary-size;
+    }
+    .boxDesafio{
+        @include desafio-box;
+        margin-bottom: 20px;
+
+        .boxDesafio__logo{
+            @include logo-desafio;
+       }
+       .boxDesafio__textLogo{
+           @include text-Desafio;
+       }
+       .textBox__date{
+            @include text-body;
+            font-weight: $secundary-weight;
+            font-size: $third-size;
+            margin-left: 20px;
+       }
+   
+    }  
+    .blogBox{
+        background-color: rgb(237, 228, 240);
+        padding: 20px 20px;
+        &__text{
+            @include text-body;
+        }
+        .blog__box{
+            display: flex;
+            justify-content: center;
+            .blog__Imagen{
+                width: 603px;
+                height: 314px;
+                border-radius: 20px;
+                margin: 20px 0;               
+            }
+
+        }
+    } 
+}
+
+.containerBlog{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
